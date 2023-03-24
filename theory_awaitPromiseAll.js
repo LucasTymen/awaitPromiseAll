@@ -13,8 +13,8 @@ containing the resolved values of each promise from the argument array.
 
 async function asyncPromAll() {
   const resultArray = await Promise.all([asyncTask1(), asyncTask2(),
-    asyncTask3(), asyncTask4()]);
-  for (let i = 0; i<resultArray.length; i++){
+  asyncTask3(), asyncTask4()]);
+  for (let i = 0; i < resultArray.length; i++) {
     console.log(resultArray[i]);
   }
 }
@@ -62,7 +62,7 @@ this:
 */
 
 async function myFunction() {
-  let myArray = await Promise.all([returnsPromise1(), returnsPromise2(), returnsPromise3() ]);
+  let myArray = await Promise.all([returnsPromise1(), returnsPromise2(), returnsPromise3()]);
 }
 
 /*
@@ -83,9 +83,9 @@ One option is to save variable for each value:
 */
 
 let vegetable = foodArray[0];
-let starch =  foodArray[1];
-let protein =  foodArray[2];
-let side =  foodArray[3];
+let starch = foodArray[1];
+let protein = foodArray[2];
+let side = foodArray[3];
 
 console.log(`Dinner is served. We're having ${vegetable}, ${starch}, ${protein}, and ${side}.`);
 

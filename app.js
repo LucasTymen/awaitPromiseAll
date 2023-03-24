@@ -1,8 +1,8 @@
-let {cookBeans, steamBroccoli, cookRice, bakeChicken} = require('./library.js');
+let { cookBeans, steamBroccoli, cookRice, bakeChicken } = require('./library.js');
 
 // Write your code below:
 
-async function serveDinnerAgain(){
+async function serveDinnerAgain() {
   let foodArray = await Promise.all([steamBroccoli(), cookRice(), bakeChicken(), cookBeans()]);
   console.log(`Dinner is served. We're having ${foodArray[0]}, ${foodArray[1]}, ${foodArray[2]}, and ${foodArray[3]}.`);
 }
